@@ -1,15 +1,16 @@
 /* CREATE PLAYER */
-var playerHeadline = document.getElementByClassName("playerTurn");
 
-var playerOneTurn = function(){
+	var playerHeadline = document.getElementsByClassName("playerTurn");
 	var playerOne = document.createElement('h3');
 	var oneText = document.createTextNode("Player one's turn");
+
+var playerOneTurn = function() {
 	playerOne.setAttribute('id', "playerOneTurn");
 	playerOne.appendChild(oneText);
-	playerHeadline.appendChild(playerOne);
 	playerOne.style.color = "#f7941d";
 };
 playerOneTurn();
+
 
 /* PLAYER 1: X PIECE */
 /* (add to function to create X)
@@ -40,12 +41,28 @@ playerOneTurn();
 var space1 = document.getElementById("cell1");
 console.log(space1);
 space1.addEventListener("click", function() {
+	var x = document.createElement('h2');
+	var xText = document.createTextNode("X");
+	x.setAttribute('id', "x");
+	x.appendChild(xText);
+	space1.style.backgroundColor = "#f7941d";
+	console.log(x);
+	space1.appendChild(x);
 	console.log("clicked");
 });
 
 var space2 = document.getElementById("cell2");
 console.log(space2);
 space2.addEventListener("click", function() {
+	var o = document.createElement('h2');
+	var oText = document.createTextNode("O");
+	o.setAttribute('id', "o");
+	o.appendChild(oText);
+	space2.style.backgroundColor = "#12a89d";
+	console.log(o);
+	space2.appendChild(o);
+	space2.removeEventListener('click', space2, false);
+	console.log("clicked");
 	console.log("clicked");
 });
 
