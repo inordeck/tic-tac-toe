@@ -1,35 +1,140 @@
+/* 
+FONTS IN USE
+HEADLINE: "Playfair Display" 400i 900i
+BODY: "Raleway" 300 600 900
+*/
+
+/*
+COLORS IN USE:
+ORANGE: #f7941d
+TEAL 1 DARK: #12a89d
+TEAL 2 MEDIUM: #64b9b4
+TEAL 3 MEDIUM LIGHT: #98ccc8
+TEAL 4 LIGHT: #cae4e1
+GRAY 1 DARK: #58585a
+GRAY 3 MEDIUM: #818286
+GRAY 2 LIGHT: #d1d2d4
+*/
+
+/* HEADER */
 header {
-
+	text-align: center;
+	background-color: #58585a; 
 }
-
 #headline {
-
+	padding: 25px 0 50px 0;
+	font-family: "Playfair Display", serif;
+	font-style: italic;
+	font-weight: 900;
+	font-size: 100px;
+}
+#tic{
+	color: #f7941d;
+}
+#tac {
+	color: #d1d2d4;
+}
+#toe {
+	color: #12a89d;
 }
 
+/* GAME BOARD */
 main {
-
+	margin: 0 auto;
+	text-align: center;
+}
+#tictactoe /* table div */ {
+	margin: 30px;
+}
+table {
+	margin: 0 auto;
+	width: 600px;
+	height: 600px;
+	border-collapse: collapse;
+	border-style: hidden;
+}
+table td, table th {
+    border: 3px solid #58585a;
+    background-color: #d1d2d4;
+	text-align: center;
+	vertical-align: middle;
+}
+table td {
+	width: 200px;
+}
+table th {
+	height: 200px;
+}
+h2 /* X's and O's */{
+	margin: -50px 0;
+	padding: 0;
+	font-family: "Playfair Display", serif;
+	font-weight: 900;
+	font-style: italic;
+	font-size: 75px;
+	color: white;
+}
+h3 /* player turn */ {
+	margin: 10px;
+	font-family: "Raleway", sans-serif;
+	font-weight: 600;
+	font-size: 25px;
+	text-transform: uppercase;
+}
+/* BUTTON */
+button {
+	margin: 5px 0 40px 0;
+    padding: 15px 32px;
+    display: inline-block;
+	background-color: #58585a; /* dark gray */
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+button:hover {
+	background-color: #f7941d; /* orange */
 }
 
-#gameboard /*table*/ {
-
-}
-
-#reset {
-
-}
-
+/* FOOTER */
 footer {
-
+	background-color: black;
+	color: #d1d2d4;
 }
-
+#footerInfo {
+	margin: 0 auto;
+	max-width: 400px;
+	text-align: center;
+}
 #made {
-
+	display: inline-block;
+	float: left;
+	padding: 50px 10px 15px 10px;
+	margin-bottom: 25px;
+	font-family: "Playfair Display", serif;
+	font-style: italic;
+	font-weight: 900;
+	font-size: 30px;
 }
-
 #logo {
-
+	display: inline-block;
+	float: right;
+	clear: right;
+	padding: 25px 10px 15px 10px;
+	margin-bottom: 25px; 
+	height: 60px;
 }
-
 #copyright {
-	
+	display: block;
+	padding: 10px 0 40px 0;
+	margin: 0 auto;
+	clear: left;
+	font-family: "Raleway", serif;
+	font-weight: 600;
 }

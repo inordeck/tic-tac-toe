@@ -1,0 +1,10 @@
+adt's in tic tac toe game:
+	1. header
+	2. player turn
+	3. gameboard
+	4. gameboard cells
+	5. player pieces
+		a. x
+		b. o
+	6. reset button
+	7. winning state
