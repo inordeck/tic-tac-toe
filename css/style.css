@@ -44,45 +44,46 @@ main {
 	text-align: center;
 }
 #tictactoe /* table div */ {
-	margin: 30px;
-}
-table {
-	margin: 0 auto;
-	width: 600px;
-	height: 600px;
-	border-collapse: collapse;
-	border-style: hidden;
-}
-table td, table th {
-    border: 3px solid #58585a;
-    background-color: #d1d2d4;
-	text-align: center;
-	vertical-align: middle;
-}
-table td {
-	width: 200px;
-}
-table th {
-	height: 200px;
-}
-h2 /* X's and O's */{
-	margin: -50px 0;
-	padding: 0;
-	font-family: "Playfair Display", serif;
-	font-weight: 900;
-	font-style: italic;
-	font-size: 75px;
-	color: white;
+	margin: 50px;
 }
 h3 /* player turn */ {
-	margin: 10px;
+	padding: 10px 0 40px 0;
 	font-family: "Raleway", sans-serif;
 	font-weight: 600;
 	font-size: 25px;
 	text-transform: uppercase;
+	color: #f7941d;
 }
+table {
+	margin: 0 auto;
+	width: 525px;
+	height: 525px;
+	border-collapse: collapse;
+	border-style: hidden;
+	background-color: #d1d2d4;
+}
+table td, table th {
+    border: 3px solid #58585a;
+	text-align: center;
+	vertical-align: middle;
+}
+table td {
+	width: 175px;
+}
+table th {
+	height: 175px;
+}
+.cell /* X's and O's */ {
+	margin: -100px 0; 
+	font-family: "Playfair Display", serif;
+	font-weight: 900;
+	font-style: italic;
+	font-size: 75px;
+	color: #12a89d;
+}
+
 /* BUTTON */
-button {
+a {
 	margin: 5px 0 40px 0;
     padding: 15px 32px;
     display: inline-block;
@@ -98,7 +99,7 @@ button {
     text-transform: uppercase;
     text-decoration: none;
 }
-button:hover {
+a:hover {
 	background-color: #f7941d; /* orange */
 }
 
